@@ -1,0 +1,138 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background: hsl(225, 100%, 94%) url("background-mobile.svg") no-repeat;
+      letter-spacing: -0.02em;
+    }
+    main {
+        height: 80%;
+      margin:auto 20px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      
+    }
+    
+    br.desktop-br {
+      display: none;
+    }
+   
+    .desc {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+    }
+    div#plan {
+      width: 83.2%;
+    }
+    #proceed, #cancel {
+      height: 8.8%;
+      width: 85.3%;
+    }
+    p{
+       
+        padding :auto 20px;
+        font-size: 17px;
+    }
+   
+}
+@media only screen and (min-width:601px) {
+  body {
+    background: hsl(225, 100%, 94%) url("background-desktop.svg") no-repeat;
+    letter-spacing: 0.02em;
+  }
+  main {
+    height: 77.4%;
+    width: max(384px,31.25%);
+  }
+  br.mobile-br {
+    display: none;
+  }
+  
+  p#desc {
+    width: 308px;
+  }
+  div#plan {
+    width: 78.3%;
+  }
+  #proceed, #cancel {
+    height: 7%;
+    width: 78.2%;
+  }
+}
+body,html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  font-family: Red Hat Display;
+  background-color: white;
+}
+#bg {
+  margin-top: 0;
+  width: 100%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+p#desc, h2, div#plan p{
+  font-size: 16px;
+}
+
+div#plan {
+  height: 14%;
+  border-radius: 10px;
+  
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+}
+
+#proceed, #cancel {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+}
+main *, #proceed div, #cancel div, div#plan *{
+  margin:auto;
+}
+#proceed, #cancel, #plan {
+  border-radius: 10px;
+ }
+
+#h1,p,#cancel {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+h1, h2,#cancel:active {
+  color: hsl(223, 47%, 23%);
+}
+#proceed {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 5px 15px hsl(224, 23%, 55%);
+}
+#proceed:active {
+  opacity: 0.8;
+}
+#change {
+  color:hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+#change:active {
+  text-decoration: none;
+}
+#cancel {
+  margin-top: 0;
+}
